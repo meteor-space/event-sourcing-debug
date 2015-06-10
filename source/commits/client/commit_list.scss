@@ -1,0 +1,45 @@
+.space-cqrs-debug.commit-list {
+  width: 90%;
+  max-width: 640px;
+  margin: 40px auto;
+  font-size: 14px;
+
+  h1 {
+    font-size: 22px;
+    margin: 1em 0 0.5em;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin: 2em 0 1em;
+    border-bottom: 1px solid #919191;
+    padding-bottom: 9px;
+
+    .meta {
+      font-size: 12px;
+    }
+  }
+
+  p, ul {
+    margin-top: 1em;
+  }
+
+  ul.events, ul.commands {
+    list-style-type: square;
+    padding-left: 18px;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  .meta {
+    color: #AAA;
+  }
+
+  .event, .command {
+    .type {
+      font-weight: bold;
+    }
+  }
+}
