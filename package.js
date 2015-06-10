@@ -12,8 +12,8 @@ Package.onUse(function(api) {
   api.use([
     'coffeescript',
     'templating',
-    'fourseven:scss',
-    'peerlibrary:blaze-components',
+    'fourseven:scss@0.9.6',
+    'peerlibrary:blaze-components@0.9.2',
     'space:cqrs@5.0.0',
     'space:ui@5.1.0',
   ]);
