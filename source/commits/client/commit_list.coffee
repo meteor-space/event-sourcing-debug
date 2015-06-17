@@ -27,7 +27,7 @@ class Space.cqrs.debug.CommitListComponent extends Space.ui.BlazeComponent
   _parseEJSON: (ejson) ->
     ejson = JSON.parse(ejson)
 
-    if ejson.$value?
+    if ejson? and ejson.$value?
       if @utils.isObject(ejson.$value)
         for key, value of ejson.$value
           ejson.$value[key] = @_parseEJSON(value)
