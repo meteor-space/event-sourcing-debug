@@ -1,6 +1,6 @@
 Package.describe({
   name: 'space:cqrs-debug',
-  version: '0.1.0',
+  version: '0.1.1',
   summary: 'Visual debugging for space:cqrs.',
   debugOnly: true
 });
@@ -12,8 +12,8 @@ Package.onUse(function(api) {
   api.use([
     'coffeescript',
     'templating',
-    'fourseven:scss@0.9.6',
-    'peerlibrary:blaze-components@0.9.2',
+    'fourseven:scss@3.1.1',
+    'peerlibrary:blaze-components@0.12.0',
     'space:cqrs@5.0.0',
     'space:ui@5.1.0',
   ]);
