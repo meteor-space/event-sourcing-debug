@@ -14,6 +14,7 @@ Package.onUse(function(api) {
     'templating',
     'fourseven:scss@3.1.1',
     'peerlibrary:blaze-components@0.12.0',
+    'space:messaging@1.5.2',
     'space:cqrs@5.0.0',
     'space:ui@5.1.0',
   ]);

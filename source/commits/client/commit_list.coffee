@@ -25,16 +25,16 @@ class Space.cqrs.debug.CommitListComponent extends Space.ui.BlazeComponent
   dateString: (date) -> date.toISOString()
 
   _parseEJSON: (ejson) ->
-    ejson = JSON.parse(ejson)
+    return @_ejsonFromJSON JSON.parse(ejson)
 
-    if ejson? and ejson.$value?
-      if @utils.isObject(ejson.$value)
-        for key, value of ejson.$value
-          ejson.$value[key] = @_parseEJSON(value)
+  _ejsonFromJSON: (json) ->
+    if json? and json.$value?
+      if @utils.isObject(json.$value)
+        for key, value of json.$value
+          json.$value[key] = @_ejsonFromJSON(value)
       else
-        ejson = ejson.$value
-
-    return ejson
+        json = ejson.$value
+    return json
 
   _beautifyJSONOutput: (value) ->
     value = JSON.stringify value, null, 4
