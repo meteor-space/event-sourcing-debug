@@ -1,11 +1,11 @@
-class Space.cqrs.debug extends Space.ui.Module
+class Space.eventSourcing.debug extends Space.ui.Module
 
-  @publish this, 'Space.cqrs.debug'
+  @publish this, 'Space.eventSourcing.debug'
 
   RequiredModules: ['Space.ui']
 
   Components: [
-    'Space.cqrs.debug.CommitListComponent'
+    'Space.eventSourcing.debug.CommitListComponent'
   ]
 
   Dependencies:
@@ -14,4 +14,4 @@ class Space.cqrs.debug extends Space.ui.Module
   configure: ->
     super
     commits = new @mongo.Collection 'space_cqrs_commits'
-    @injector.map('Space.cqrs.Commits').to commits
+    @injector.map('Space.eventSourcing.Commits').to commits
