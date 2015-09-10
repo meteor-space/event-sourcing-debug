@@ -1,6 +1,6 @@
 Package.describe({
   name: 'space:event-sourcing-debug',
-  version: '0.3.0',
+  version: '0.3.1',
   summary: 'Debug events and commands in an event-sourced Space application.',
   debugOnly: true
 });

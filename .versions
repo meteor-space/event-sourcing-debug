@@ -18,6 +18,7 @@ jquery@1.11.3_2
 json@1.0.3
 logging@1.0.7
 meteor@1.1.6
+mikowals:batch-insert@1.1.9
 minifiers@1.1.5
 minimongo@1.0.8
 mongo@1.1.0
@@ -29,11 +30,11 @@ peerlibrary:blaze-components@0.12.0
 random@1.0.3
 reactive-var@1.0.5
 retry@1.0.3
-space:base@2.3.1
-space:event-sourcing@1.0.0
-space:event-sourcing-debug@0.3.0
-space:messaging@1.6.0
-space:ui@5.2.1
+space:base@2.4.1
+space:event-sourcing@1.2.0
+space:event-sourcing-debug@0.3.1
+space:messaging@1.7.0
+space:ui@5.3.0
 spacebars@1.0.6
 spacebars-compiler@1.0.6
 templating@1.1.1
