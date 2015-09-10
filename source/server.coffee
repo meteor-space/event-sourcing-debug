@@ -1,9 +1,9 @@
-class Space.eventSourcing.debug extends Space.Module
+class Space.eventSourcingDebug extends Space.Module
 
-  @publish this, 'Space.eventSourcing.debug'
+  @publish this, 'Space.eventSourcingDebug'
 
   RequiredModules: ['Space.eventSourcing']
 
   Singletons: [
-    'Space.eventSourcing.debug.CommitsPublication'
+    'Space.eventSourcingDebug.CommitsPublication'
   ]

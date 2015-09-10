@@ -1,4 +1,4 @@
-class Space.eventSourcing.debug.CommitsPublication
+class Space.eventSourcingDebug.CommitsPublication
 
   Dependencies:
     meteor: 'Meteor'

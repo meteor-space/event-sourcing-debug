@@ -1,11 +1,11 @@
-class Space.eventSourcing.debug extends Space.ui.Module
+class Space.eventSourcingDebug extends Space.ui.Module
 
-  @publish this, 'Space.eventSourcing.debug'
+  @publish this, 'Space.eventSourcingDebug'
 
   RequiredModules: ['Space.ui']
 
   Components: [
-    'Space.eventSourcing.debug.CommitListComponent'
+    'Space.eventSourcingDebug.CommitListComponent'
   ]
 
   Dependencies:
