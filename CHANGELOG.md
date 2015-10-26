@@ -1,6 +1,12 @@
 Changelog
 =========
 
+## 0.3.2
+Moves from `Space.eventSourcing.debug` namespace to `Space.eventSourcingDebug`
+
+## 0.3.1
+Moves to `Space.eventSourcing` namespace and updates to latest space packages.
+
 ## 0.3.0
 Updated repository location and package name to follow `space:event-sourcing`
 

@@ -1,8 +1,8 @@
-class Space.cqrs.debug.CommitsPublication
+class Space.eventSourcingDebug.CommitsPublication
 
   Dependencies:
     meteor: 'Meteor'
-    commits: 'Space.cqrs.Commits'
+    commits: 'Space.eventSourcing.Commits'
 
   onDependenciesReady: ->
     @meteor.publish 'space-cqrs-commits', => @commits.find()

@@ -1,9 +1,9 @@
-class Space.cqrs.debug.CommitListComponent extends Space.ui.BlazeComponent
+class Space.eventSourcingDebug.CommitListComponent extends Space.ui.BlazeComponent
 
   @register 'space_cqrs_debug_commit_list'
 
   Dependencies:
-    commits: 'Space.cqrs.Commits'
+    commits: 'Space.eventSourcing.Commits'
     ejson: 'EJSON'
     utils: 'underscore'
 
