@@ -1,13 +1,13 @@
 Space.messaging.Publication.extend('Space.eventSourcingDebug.Publications', {
 
   dependencies: {
-    commits: 'Space.eventSourcing.Commits'
+    commitsCollection: 'Space.eventSourcing.Commits'
   },
 
   publications() {
     return [{
-      'space-eventSourcing-commits'() {
-        return this.commits.find();
+      'space-eventSourcing-commits'(context, limit) {
+        return this.commitsCollection.find({}, { limit: limit });
       }
     }]
   }

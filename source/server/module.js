@@ -1,11 +1,12 @@
 Space.eventSourcingDebug = Space.Module.define('Space.eventSourcingDebug', {
 
   requiredModules: [
-    'Space.eventSourcing'
+    'Space.eventSourcing',
+    'Space.messaging'
   ],
 
   singletons: [
-    'Space.eventSourcingDebug.CommitsPublication'
+    'Space.eventSourcingDebug.Publications'
   ]
 
 });

@@ -12,20 +12,20 @@ Package.onUse(function(api) {
 
   api.use([
     'ecmascript',
-    'space:base@4.0.1'
+    'space:base@4.0.1',
+    'meteorhacks:subs-manager@1.6.2'
   ]);
 
   api.use([
-    'space:event-sourcing@3.0.0',
+    'space:event-sourcing@2.1.0',
     'space:messaging@3.0.1'
   ], 'server');
 
   api.use([
-    'templating',
-    'blaze-html-templates',
     'fourseven:scss@3.4.1',
     'peerlibrary:blaze-components@0.16.2',
-    'space:ui@6.0.0'
+    'space:ui@6.0.0',
+    'space:flux@0.7.0'
   ], 'client');
 
   api.addFiles([
@@ -35,9 +35,12 @@ Package.onUse(function(api) {
 
   api.addFiles([
     'source/client/module.js',
-    'source/client/components/commit-list/commit-list.html',
-    'source/client/components/commit-list/commit-list.js',
-    'source/client/components/commit-list/commit_list.scss'
+    'source/client/events.js',
+    'source/client/stores/commits-store.js',
+    'source/client/trackers/commits-tracker.js',
+    'source/client/components/commits-list/commits-list.html',
+    'source/client/components/commits-list/commits-list.js',
+    'source/client/components/commits-list/commits-list.scss'
   ], 'client');
 
 });
