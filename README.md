@@ -1,6 +1,6 @@
 # space:event-sourcing-debug
 
-debugOnly view helpers for [space:cqrs](https://github.com/meteor-space/event-sourcing-debug) applications.
+debugOnly view helpers for [space:event-sourcing](https://github.com/meteor-space/event-sourcing) applications.
 
 Debug events and commands that are sent through your server-side system.
 
