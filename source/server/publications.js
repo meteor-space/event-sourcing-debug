@@ -6,7 +6,7 @@ Space.messaging.Publication.extend('Space.eventSourcingDebug.Publications', {
 
   publications() {
     return [{
-      'space-cqrs-commits'() {
+      'space-eventSourcing-commits'() {
         return this.commits.find();
       }
     }]
