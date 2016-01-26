@@ -29,15 +29,15 @@ Package.onUse(function(api) {
   ], 'client');
 
   api.addFiles([
-    'source/server.js',
-    'source/commits/server/publication.js'
+    'source/server/module.js',
+    'source/server/publications.js'
   ], 'server');
 
   api.addFiles([
-    'source/client.js',
-    'source/commits/client/commit_list.html',
-    'source/commits/client/commit_list.js',
-    'source/commits/client/commit_list.scss'
+    'source/client/module.js',
+    'source/client/components/commit-list/commit-list.html',
+    'source/client/components/commit-list/commit-list.js',
+    'source/client/components/commit-list/commit_list.scss'
   ], 'client');
 
 });
