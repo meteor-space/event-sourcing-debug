@@ -1,19 +1,21 @@
 Package.describe({
   name: 'space:event-sourcing-debug',
-  version: '0.3.2',
   summary: 'Debug events and commands in an event-sourced Space application.',
-  debugOnly: true
+  version: '0.3.2',
+  debugOnly: true,
+  documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
 
-  api.versionsFrom('1.0');
+  api.versionsFrom('1.2.0.1');
 
   api.use([
     'coffeescript',
     'templating',
-    'fourseven:scss@3.1.1',
-    'peerlibrary:blaze-components@0.12.0',
+    'blaze-html-templates',
+    'fourseven:scss@3.4.1',
+    'peerlibrary:blaze-components@0.16.2',
     'space:event-sourcing@1.2.0',
     'space:ui@5.3.0',
   ]);
