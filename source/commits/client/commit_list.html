@@ -1,11 +1,11 @@
-<template name="space_cqrs_debug_commit_list">
+<template name="space_eventSourcing_debug_commit_list">
 
   <div class="space-cqrs-debug commit-list">
 
     <h1>Commits</h1>
 
     <ul class="commits">
-      {{#each get.commits}}
+      {{#each commits}}
         <li class="commit">
           <h2>
             {{sourceId}}

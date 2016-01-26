@@ -11,24 +11,32 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.0.1');
 
   api.use([
-    'coffeescript',
+    'ecmascript',
+    'space:base@4.0.1'
+  ]);
+
+  api.use([
+    'space:event-sourcing@3.0.0',
+    'space:messaging@3.0.1'
+  ], 'server');
+
+  api.use([
     'templating',
     'blaze-html-templates',
     'fourseven:scss@3.4.1',
     'peerlibrary:blaze-components@0.16.2',
-    'space:event-sourcing@1.2.0',
-    'space:ui@5.3.0',
-  ]);
+    'space:ui@6.0.0'
+  ], 'client');
 
   api.addFiles([
-    'source/server.coffee',
-    'source/commits/server/cqrs_commits_publication.coffee'
+    'source/server.js',
+    'source/commits/server/publication.js'
   ], 'server');
 
   api.addFiles([
-    'source/client.coffee',
+    'source/client.js',
     'source/commits/client/commit_list.html',
-    'source/commits/client/commit_list.coffee',
+    'source/commits/client/commit_list.js',
     'source/commits/client/commit_list.scss'
   ], 'client');
 
