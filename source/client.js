@@ -13,7 +13,7 @@ Space.eventSourcingDebug = Space.Module.define('Space.eventSourcingDebug', {
   ],
 
   onInitialize() {
-    const commits = new this.mongo.Collection('space_cqrs_commits');
+    const commits = new this.mongo.Collection('space_eventSourcing_commits');
     this.injector.map('Space.eventSourcing.Commits').to(commits);
   }
 
