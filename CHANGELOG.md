@@ -1,5 +1,9 @@
 Changelog
 =========
+## 0.4.0
+- Bumps `space:event-sourcing@2.1.0` to `space:event-sourcing@3.0.0`
+- Bumps `space:base@4.0.1` to `space:base@4.1.1`
+- Bumps `space:messaging@3.0.1` to `space:messaging@3.1.1`
 
 ## 0.3.2
 Moves from `Space.eventSourcing.debug` namespace to `Space.eventSourcingDebug`
