@@ -1,0 +1,49 @@
+<template name="space_eventSourcing_debug_commits_list">
+
+  <div class="space-eventSourcing-debug commits-list">
+
+    <ul class="commits">
+      {{#each commits}}
+        <li class="commit">
+          <strong>
+            {{sourceId}} <br />
+            <span class="meta">
+              Aggregate Version: {{version}}  <br />
+              Inserted {{dateString insertedAt}}  <br />
+              Sent by: {{sentBy}}  <br />
+              Received by:
+              {{#each receivers}}
+                {{appId}}
+              {{/each}}
+            </span>
+          </strong>
+
+          {{#if changes.commands}}
+
+            <ul class="commands">
+              {{#each changes.commands}}
+              <li class="command">
+                <p class="type">{{type}} <span class="meta"> Command</span></p>
+                <pre class="value">{{value}}</pre>
+              </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+
+          {{#if changes.events}}
+            <ul class="events">
+              {{#each changes.events}}
+              <li class="event">
+                <p class="type">{{type}} <span class="meta"> Event</span></p>
+                <pre class="value">{{value}}</pre>
+              </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+
+  </div>
+
+</template>

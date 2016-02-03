@@ -1,33 +1,46 @@
 Package.describe({
   name: 'space:event-sourcing-debug',
-  version: '0.3.2',
   summary: 'Debug events and commands in an event-sourced Space application.',
-  debugOnly: true
+  version: '0.4.0',
+  debugOnly: true,
+  documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
 
-  api.versionsFrom('1.0');
+  api.versionsFrom('1.2.0.1');
 
   api.use([
-    'coffeescript',
-    'templating',
-    'fourseven:scss@3.1.1',
-    'peerlibrary:blaze-components@0.12.0',
-    'space:event-sourcing@1.2.0',
-    'space:ui@5.3.0',
+    'ecmascript',
+    'space:base@4.1.1',
+    'meteorhacks:subs-manager@1.6.2'
   ]);
 
+  api.use([
+    'space:event-sourcing@3.0.0',
+    'space:messaging@3.1.1'
+  ], 'server');
+
+  api.use([
+    'fourseven:scss@3.4.1',
+    'peerlibrary:blaze-components@0.16.2',
+    'space:ui@6.0.0',
+    'space:flux@0.7.0'
+  ], 'client');
+
   api.addFiles([
-    'source/server.coffee',
-    'source/commits/server/cqrs_commits_publication.coffee'
+    'source/server/module.js',
+    'source/server/publications.js'
   ], 'server');
 
   api.addFiles([
-    'source/client.coffee',
-    'source/commits/client/commit_list.html',
-    'source/commits/client/commit_list.coffee',
-    'source/commits/client/commit_list.scss'
+    'source/client/module.js',
+    'source/client/events.js',
+    'source/client/stores/commits-store.js',
+    'source/client/trackers/commits-tracker.js',
+    'source/client/components/commits-list/commits-list.html',
+    'source/client/components/commits-list/commits-list.js',
+    'source/client/components/commits-list/commits-list.scss'
   ], 'client');
 
 });
