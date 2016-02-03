@@ -10,7 +10,14 @@ Debug events and commands that are sent through your server-side system.
 ## Features
 
 ### Display all commits
-Add `{{> space_eventSourcing_debug_commit_list}}` to a Blaze template in your app.
+Add `{{> space_eventSourcing_debug_commits_list}}` to a Blaze template in your app.
 
+Add `Space.eventSourcingDebug` module to your client and server app instances:
+
+```
+requiredModules: [
+    'Space.eventSourcingDebug'
+  ]
+```
 ## License
 Licensed under the MIT license.
