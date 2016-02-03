@@ -1,7 +1,7 @@
 Package.describe({
   name: 'space:event-sourcing-debug',
   summary: 'Debug events and commands in an event-sourced Space application.',
-  version: '0.3.2',
+  version: '0.4.0',
   debugOnly: true,
   documentation: 'README.md'
 });
@@ -12,13 +12,13 @@ Package.onUse(function(api) {
 
   api.use([
     'ecmascript',
-    'space:base@4.0.1',
+    'space:base@4.1.1',
     'meteorhacks:subs-manager@1.6.2'
   ]);
 
   api.use([
-    'space:event-sourcing@2.1.0',
-    'space:messaging@3.0.1'
+    'space:event-sourcing@3.0.0',
+    'space:messaging@3.1.1'
   ], 'server');
 
   api.use([
